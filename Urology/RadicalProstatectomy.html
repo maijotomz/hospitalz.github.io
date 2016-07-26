@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEALTHCARE Agency</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link href="../css/master.css" rel="stylesheet">
+    <link rel="stylesheet" href="../plugins/iview/css/iview.css" type='text/css' media='all' />
+    <link rel="stylesheet" href="../plugins/iview/css/skin/style.css" type='text/css' media='all' />
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery-migrate-1.2.1.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap-3.1.1.min.js"></script>
+    <script src="../js/modernizr.custom.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="../js/home.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-left">
+                        <ul class="social-links">
+                            <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
+                            <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
+                            <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="top-header__links col-sm-7">
+                        <div class="btn-group languages">
+                            <button type="button" class="btn_languages dropdown-toggle" data-toggle="dropdown"><i class="icon_globe-2"></i>English UK<span class="caret color_primary"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="javascript:void(0);">English UK1</a></li>
+                                <li><a href="javascript:void(0);">English UK2</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);">Hospital Timings</a>
+                        <a href="javascript:void(0);">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <a href="index.html" class="logo">
+                                <img class="logo__img" src="../img/logo.png" height="50" width="294" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <div class="header-block">
+                                <span class="header-label">
+                <i class="icon-header icon-call-in color_primary"></i>
+                <span class="helper"> Call Us <a href="tel:+522 234 56789"><strong>0474-2723645</strong></a></span>
+                                </span>
+                                <span class="header-label">
+                <i class="icon-header icon-envelope-open color_primary"></i>
+                <span class="helper"> Email us <a href="mailto:hozpitalz@gmail.com"><strong>hozpitalz@gmail.com</strong></a></span>
+                                </span>
+                            </div>
+                            <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
+                                <input type="text" value="" id="search-mobile" name="s">
+                                <button type="submit"><i class="icon fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- end header-inner-->
+            </div>
+            <!-- end container-->
+            <div class="top-nav ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12  col-xs-12">
+                            <div class="navbar yamm ">
+                                <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
+                                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                                    <a href="#" class="navbar-brand">Menu</a> </div>
+                                <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="dropdown"><a href="../home.html">Home <b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li> <a href="../home.html"> Home</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="../home.html">ABOUT<b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li> <a href="../about-2.html"> About us</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="services.html"> SERVICES <b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li> <a href="../services.html">GENERAL SURGERY</a> </li>
+                                                <li> <a href="../home.html">COSMETIC SURGERY</a> </li>
+                                                <li> <a href="../home.html">DENTISTRY</a> </li>
+                                                <li> <a href="../home.html">EYE SURGERY</a> </li>
+                                                <li> <a href="../home.html">CARDIAC SURGERY</a> </li>
+                                                <li> <a href="../home.html">ORTHOPAEDIC SURGERY</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="../appointment-form.html">APPOINTMENT FORM </a> </li>
+                                        <li><a href="../contact.html">CONTACT </a> </li>
+                                    </ul>
+                                    <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">
+                                        <input type="text" value="" id="search" name="s">
+                                        <button type="submit"><i class="icon-magnifier"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end top-nav -->
+        </div>
+        <!-- HEADER END -->
+        <div class="ui-title-page bg_title bg_transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>Radical Prostatectomy</h1>
+                        <!-- <div class="ui-subtitle-page">Egestas dolor erat vamus suscip ipsum estduin</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ui-title-page -->
+        <div class="border_btm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="../home.html"><i class="icon icon-home color_primary"></i></a></li>
+                            <li class="active" style="color:#f26529 !important"><a href="../services.html" style="color:#f26529 !important">General Surgery</a></li>
+                            <li class="active" style="color:#f26529 !important"><a href="../Urology.html" style="color:#f26529 !important" id="heading">Urology</a></li>
+                            <li class="active" id="name">Radical Prostatectomy</li>
+                            <li style="text-align:center" ng-click="appointment('../appointment-form.html')"><a class="btn btn_small" style="background-color: #f26529;margin-top:0px;color:white">Request an appointment</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end breadcrumb -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <main class="main-content" style="padding-bottom:100px;">
+                        <article class="post" style="margin-top:0px !important;margin-left:0px !important">
+                            <div class="entry-main">
+                                <h2 class="entry-title">Description</h2>
+                                <div class="entry-content ui-text">A laparoscopic radical prostatectomy (LRP) is a modern form of a radical prostatectomy, a surgery for prostate cancer. It is a minimally invasive procedure that relies on modern technologies like miniaturization and fibre optics. This procedure takes about 3-4 hours. Often this procedure is performed in case of localized prostate cancer, i.e. when the cancer hasn’t spread beyond the prostate gland. The main goal of this surgery is to remove all the cancer, sometimes it means removing the prostate and the tissues around it including a set of nerves to the penis that affects the man’s ability to have an erection.</div>
+                                <h2 class="entry-title">Diagnosis</h2>
+                                <div class="entry-content ui-text">Anyone diagnosed with a localized prostate cancer may benefit from LRP. However, the decision to undergo a prostate cancer surgery revolves around numerous considerations, including the severity of the prostate cancer and other illnesses. Following factors are considered during the preoperative evaluation: age, prostate biopsy findings, pre-biopsy PSA prostate-specific antigen levels, height and weight, previous prostate cancer treatments, smoking history, other illnesses, current medications and previous surgery. You will be asked to undergo a complete physical exam and some other tests. Your healthcare provider will ensure that the medical problems like high blood pressure, diabetes and heart or lung problems are bring controlled.</div>
+                                <h2 class="entry-title">Treatment</h2>
+                                <div class="entry-content ui-text">You will be under general anesthesia so that you are asleep and pain free. During, the laparoscopic radical prostatectomy surgery, the surgeon makes several small incisions in the belly. A lighted viewing instrument called as a laparoscope is then inserted into one of the incisions. The surgeons use some special instruments to reach and remove the prostate through the other incisions. This procedure takes around 2-3 hours and the majority of patients spend about 1 night in the hospital before returning home.</div>
+                                <h2 class="entry-title">Aftercare</h2>
+                                <div class="entry-content ui-text">After the laparoscopic radical prostatectomy, you may go home the day after the procedure. You may need to stay in the bed until the morning after the surgery. You will be encouraged to move around as much as possible. The nurses will help you change your position in the bed and also show you exercises to keep the blood flowing. You will also learn to cough or deep breaths in order to prevent pneumonia. You will need to perform these steps every 1 to 2 hours. You may need to use a breathing device to keep your lungs clear.</div>
+                            </div>
+                            <!-- end entry-main -->
+                        </article>
+                        <!-- end post -->
+                        <!-- end comment-reply-form -->
+                    </main>
+                    <!-- end main-content -->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+        <!-- end banner -->
+        <footer class="footer">
+            <div class="footer__bottom" style="background-color:#E8E8E8"> <span class="copyright">© Copyrights 2015 Healthcare Agency</span>
+                <ul class="social-links">
+                    <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
+                    <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
+                    <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
+                    <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- end layout-theme -->
+    <span class="scroll-top bg-color_second"> <i class="fa fa-angle-up"> </i></span>
+    <div id="page-preloader">
+        <div class="spinner-loader"> <img width="294" height="50" alt="Logo" src="../img/logo.png" class="logo__loader">
+            <div class="heartbeat-loader"></div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="../plugins/isotope/jquery.isotope.min.js"></script>
+    <script src="../plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../plugins/bxslider/jquery.bxslider.min.js"></script>
+    <script src="../plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="../plugins/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="../plugins/jelect/jquery.jelect.js"></script>
+    <script src="../plugins/nouislider/jquery.nouislider.all.min.js"></script>
+    <!--THEME-->
+    <script src="../js/cssua.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/custom.js"></script>
+</body>
+
+</html>

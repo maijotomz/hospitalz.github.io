@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEALTHCARE Agency</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link href="../css/master.css" rel="stylesheet">
+    <link rel="stylesheet" href="../plugins/iview/css/iview.css" type='text/css' media='all' />
+    <link rel="stylesheet" href="../plugins/iview/css/skin/style.css" type='text/css' media='all' />
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery-migrate-1.2.1.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap-3.1.1.min.js"></script>
+    <script src="../js/modernizr.custom.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="../js/home.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-left">
+                        <ul class="social-links">
+                            <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
+                            <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
+                            <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="top-header__links col-sm-7">
+                        <div class="btn-group languages">
+                            <button type="button" class="btn_languages dropdown-toggle" data-toggle="dropdown"><i class="icon_globe-2"></i>English UK<span class="caret color_primary"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="javascript:void(0);">English UK1</a></li>
+                                <li><a href="javascript:void(0);">English UK2</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);">Hospital Timings</a>
+                        <a href="javascript:void(0);">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <a href="index.html" class="logo">
+                                <img class="logo__img" src="../img/logo.png" height="50" width="294" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <div class="header-block">
+                                <span class="header-label">
+                <i class="icon-header icon-call-in color_primary"></i>
+                <span class="helper"> Call Us <a href="tel:+522 234 56789"><strong>0474-2723645</strong></a></span>
+                                </span>
+                                <span class="header-label">
+                <i class="icon-header icon-envelope-open color_primary"></i>
+                <span class="helper"> Email us <a href="mailto:hozpitalz@gmail.com"><strong>hozpitalz@gmail.com</strong></a></span>
+                                </span>
+                            </div>
+                            <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
+                                <input type="text" value="" id="search-mobile" name="s">
+                                <button type="submit"><i class="icon fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- end header-inner-->
+            </div>
+            <!-- end container-->
+            <div class="top-nav ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12  col-xs-12">
+                            <div class="navbar yamm ">
+                                <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
+                                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                                    <a href="#" class="navbar-brand">Menu</a> </div>
+                                <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="dropdown"><a href="../home.html">Home <b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li> <a href="../home.html"> Home</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="../home.html">ABOUT<b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <!-- <li> <a href="about-1.html"> about 1</a> </li> -->
+                                                <li> <a href="../about-2.html"> About us</a> </li>
+                                                <!-- <li> <a href="doctors.html"> doctors</a> </li> -->
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="services.html"> SERVICES <b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li> <a href="../services.html">GENERAL SURGERY</a> </li>
+                                                <li> <a href="../home.html">COSMETIC SURGERY</a> </li>
+                                                <li> <a href="../home.html">DENTISTRY</a> </li>
+                                                <!-- <li> <a href="services.html">GENERAL SURGERY</a> </li> -->
+                                                <!-- <li> <a href="services-details.html">COSMETIC SURGERY</a> </li>
+                                                <li> <a href="services-departments.html">DENTISTRY</a> </li> -->
+                                                <li> <a href="../home.html">EYE SURGERY</a> </li>
+                                                <li> <a href="../home.html">CARDIAC SURGERY</a> </li>
+                                                <li> <a href="../home.html">ORTHOPAEDIC SURGERY</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="../appointment-form.html">APPOINTMENT FORM </a> </li>
+                                        <li><a href="../contact.html">CONTACT </a> </li>
+                                    </ul>
+                                    <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">
+                                        <input type="text" value="" id="search" name="s">
+                                        <button type="submit"><i class="icon-magnifier"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end top-nav -->
+        </div>
+        <!-- HEADER END -->
+        <div class="ui-title-page bg_title bg_transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>Endometriosis Surgery</h1>
+                        <!-- <div class="ui-subtitle-page">Egestas dolor erat vamus suscip ipsum estduin</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ui-title-page -->
+        <div class="border_btm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="../home.html"><i class="icon icon-home color_primary"></i></a></li>
+                            <li class="active" style="color:#f26529 !important"><a href="../services.html" style="color:#f26529 !important">General Surgery</a></li>
+                            <li class="active" style="color:#f26529 !important"><a href="../services-departments.html" style="color:#f26529 !important" id="heading">Gynacology</a></li>
+                            <li class="active" id="name">Endometriosis Surgery</li>
+                            <li style="text-align:center" ng-click="appointment('../appointment-form.html')"><a class="btn btn_small" style="background-color: #f26529;margin-top:0px;color:white">Request an appointment</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end breadcrumb -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <main class="main-content" style="padding-bottom:100px;">
+                        <article class="post" style="margin-top:0px !important;margin-left:0px !important">
+                            <div class="entry-main">
+                                <h2 class="entry-title">Description</h2>
+                                <div class="entry-content ui-text">The patient is given anesthesia before the procedure commences. The method of anesthesia depends on the type and duration of surgery, the patient's preference, and the recommendation of the physician. General anesthesia is most common for operative laparoscopy, while diagnostic laparoscopy is often performed under regional or local anesthesia. A catheter is inserted into the bladder to empty it of urine; this is done to minimize the risk of injury to the bladder.</div>
+                                <h2 class="entry-title">Diagnosis/Preparation</h2>
+                                <div class="entry-content ui-text">Some of the symptoms of endometriosis include pelvic pain (constant or during menstruation), infertility, painful intercourse, and painful urination and/or bowel movements during menstruation. Such symptoms, however, are also exhibited by a number of other diseases. A definitive diagnosis of endometriosis may only be made by laparoscopy or laparotomy.</div>
+                                <h2 class="entry-title">Aftercare</h2>
+                                <div class="entry-content ui-text">After the procedure is completed, the patient will usually spend several hours in the recovery room to ensure that she recovers from the anesthesia without complication. After leaving the hospital, she may experience soreness around the incision, shoulder pain from the gas used to inflate the abdomen, cramping, or constipation. Most symptoms resolve within one to three days.
+                                </div>
+                            </div>
+                            <!-- end entry-main -->
+                        </article>
+                        <!-- end post -->
+                        <!-- end comment-reply-form -->
+                    </main>
+                    <!-- end main-content -->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+        <!-- end banner -->
+        <footer class="footer">
+            <div class="footer__bottom" style="background-color:#E8E8E8"> <span class="copyright">© Copyrights 2015 Healthcare Agency</span>
+                <ul class="social-links">
+                    <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
+                    <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
+                    <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
+                    <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- end layout-theme -->
+    <span class="scroll-top bg-color_second"> <i class="fa fa-angle-up"> </i></span>
+    <div id="page-preloader">
+        <div class="spinner-loader"> <img width="294" height="50" alt="Logo" src="../img/logo.png" class="logo__loader">
+            <div class="heartbeat-loader"></div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="../plugins/isotope/jquery.isotope.min.js"></script>
+    <script src="../plugins/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../plugins/bxslider/jquery.bxslider.min.js"></script>
+    <script src="../plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="../plugins/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="../plugins/jelect/jquery.jelect.js"></script>
+    <script src="../plugins/nouislider/jquery.nouislider.all.min.js"></script>
+    <!--THEME-->
+    <script src="../js/cssua.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/custom.js"></script>
+</body>
+
+</html>

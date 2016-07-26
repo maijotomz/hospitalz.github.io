@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEALTHCARE Agency</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link href="css/master.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/iview/css/iview.css" type='text/css' media='all' />
+    <link rel="stylesheet" href="plugins/iview/css/skin/style.css" type='text/css' media='all' />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap-3.1.1.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/appointment.js"></script>
+</head>
+
+<body ng-app="appoint" ng-controller="appointCtrl">
+    <div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-left">
+                        <ul class="social-links">
+                            <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
+                            <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
+                            <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="top-header__links col-sm-7">
+                        <div class="btn-group languages">
+                            <button type="button" class="btn_languages dropdown-toggle" data-toggle="dropdown"><i class="icon_globe-2"></i>English UK<span class="caret color_primary"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="javascript:void(0);">English UK1</a></li>
+                                <li><a href="javascript:void(0);">English UK2</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);">Hospital Timings</a>
+                        <a href="javascript:void(0);">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <a href="index.html" class="logo">
+                                <img class="logo__img" src="img/logo.png" height="50" width="294" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <div class="header-block">
+                                <span class="header-label">
+                <i class="icon-header icon-call-in color_primary"></i>
+                <span class="helper"> Call Us <a href="tel:+522 234 56789"><strong>0474-2723645</strong></a></span>
+                                </span>
+                                <span class="header-label">
+                <i class="icon-header icon-envelope-open color_primary"></i>
+                <span class="helper"> Email us <a href="mailto:hozpitalz@gmail.com"><strong>hozpitalz@gmail.com</strong></a></span>
+                                </span>
+                            </div>
+                            <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
+                                <input type="text" value="" id="search-mobile" name="s">
+                                <button type="submit"><i class="icon fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- end header-inner-->
+            </div>
+            <!-- end container-->
+            <div class="top-nav ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12  col-xs-12">
+                            <div class="navbar yamm ">
+                                <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
+                                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                                    <a href="#" class="navbar-brand">Menu</a> </div>
+                                <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="dropdown"><a href="home.html">Home <b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li> <a href="home.html">Home</a> </li>
+                                                <!-- <li> <a href="home-2.html"> Home 2</a> </li> -->
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="about-2.html">ABOUT<b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <!-- <li> <a href="about-1.html"  > about 1</a> </li> -->
+                                                <li> <a href="about-2.html">About us</a> </li>
+                                                <!-- <li> <a href="doctors.html"  > doctors</a> </li> -->
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="services.html"> SERVICES <b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li> <a href="services.html">GENERAL SURGERY</a> </li>
+                                                <li> <a href="home.html">COSMETIC SURGERY</a> </li>
+                                                <li> <a href="home.html">DENTISTRY</a> </li>
+                                                <!-- <li> <a href="services.html">GENERAL SURGERY</a> </li> -->
+                                                <!-- <li> <a href="services-details.html">COSMETIC SURGERY</a> </li>
+                                                <li> <a href="services-departments.html">DENTISTRY</a> </li> -->
+                                                <li> <a href="home.html">EYE SURGERY</a> </li>
+                                                <li> <a href="home.html">CARDIAC SURGERY</a> </li>
+                                                <li> <a href="home.html">ORTHOPAEDIC SURGERY</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li ng-click="reset()"><a href="appointment-form.html">APPOINTMENT FORM </a> </li>
+                                        <li><a href="contact.html">CONTACT </a> </li>
+                                    </ul>
+                                    <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">
+                                        <input type="text" value="" id="search" name="s">
+                                        <button type="submit"><i class="icon-magnifier"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end top-nav -->
+        </div>
+        <!-- HEADER END -->
+        <div class="ui-title-page bg_title bg_transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>Appointment Form</h1>
+                        <div class="ui-subtitle-page">Fill up the below form to book an appointment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ui-title-page -->
+        <div class="border_btm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="javascript:void(0);"><i class="icon icon-home color_primary"></i></a></li>
+                            <li class="active">Get An Appointment</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end breadcrumb -->
+        <main class="main-content">
+            <section class="section" style="padding-top:0px !important">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!--  <img src="media/1170x300/1.jpg" height="300" width="1170" alt="Foto"> -->
+                            <div class="ui-subtitle-block ui-subtitle-block_form" style="margin-top:0px !important">Please fill-in the form below and make an oppointment with any of our specialist doctors</div>
+                            <!--  <!-- <i class="decor-brand"></i> -->
+                        </div>
+                    </div>
+                    <!-- end row -->
+                    <!-- <p ng-bind="head"></p>
+                    <p ng-bind="name"></p> -->
+                    <form class="form-appointment ui-form">
+                        <div class="row">
+                            <div class="col-md-5 col-md-offset-1">
+                                <div role="select" class="jelect">
+                                    <select name="mySelect" id="mySelect" ng-model="depName" class="ipfield" style="border:none;width:100%;padding:7px 0px 0px 27px;color:grey;background-color:white;border-radius:30px;cursor:pointer" ng-change="check()">
+                                        <option ng-repeat="option in data" value="{{option.name}}" ng-disabled="{{option.disable}}" ng-selected="{{option.selected}}" class="jelect-option">{{option.name}}</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="First Name">
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" placeholder="Email Address">
+                                </div>
+                                <div class="input-group">
+                                    <input class="datetimepicker" type="text" placeholder="Date Of Birth">
+                                    <i class="icon icon-calendar"></i>
+                                </div>
+                                <div class="input-group">
+                                    <input class="datetimepicker" type="text" placeholder="Preferred Appointment Date">
+                                    <i class="icon icon-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="jelect">
+                                    <select name="mySelect3" ng-model="depNames" style="border:none;width:100%;border-radius:30px;padding:7px 0px 0px 27px;color:grey;background-color:white;cursor:pointer" >
+                                        <option ng-repeat="option in Bariatric" value="{{option.val}}">{{option.val}}</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Last Name">
+                                </div>
+                                <div class="input-group">
+                                    <input type="tel" placeholder="Phone #">
+                                </div>
+                                <div role="select" class="jelect">
+                                    <input id="jelect" name="tool" value="0" data-text="imagemin" type="text" class="jelect-input">
+                                    <div tabindex="0" role="button" class="jelect-current">Select your Gender</div>
+                                    <ul class="jelect-options">
+                                        <li data-val='0' tabindex="0" role="option" class="jelect-option jelect-option_state_active">Male</li>
+                                        <li data-val='1' tabindex="0" role="option" class="jelect-option">Female</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Subject  /  Brief Description">
+                                </div>
+                                <div class="input-group">
+                                    <textarea id="comment-text" placeholder="Type your Message Details" name="comment" required rows="10"></textarea>
+                                </div>
+                                <button class="btn bg-color_primary" ng-click="send()">BOOK APPOINTMENT <span class="btn-plus">+</span></button>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </form>
+                    <!-- end form-appointment -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end section -->
+        </main>
+        <!-- end main-content -->
+        <footer class="footer">
+            <div class="footer__bottom" style="background-color:#E8E8E8"> <span class="copyright">© Copyrights 2015 Healthcare Agency</span>
+                <ul class="social-links">
+                    <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
+                    <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
+                    <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
+                    <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- end layout-theme -->
+    <span class="scroll-top bg-color_second"> <i class="fa fa-angle-up"> </i></span>
+    <div id="page-preloader">
+        <div class="spinner-loader"> <img width="294" height="50" alt="Logo" src="img/logo.png" class="logo__loader">
+            <div class="heartbeat-loader"></div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="plugins/isotope/jquery.isotope.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="plugins/bxslider/jquery.bxslider.min.js"></script>
+    <script src="plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="plugins/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="plugins/jelect/jquery.jelect.js"></script>
+    <script src="plugins/nouislider/jquery.nouislider.all.min.js"></script>
+    <!--THEME-->
+    <script src="js/cssua.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEALTHCARE Agency</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link href="css/master.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/iview/css/iview.css" type='text/css' media='all' />
+    <link rel="stylesheet" href="plugins/iview/css/skin/style.css" type='text/css' media='all' />
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap-3.1.1.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/home.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-left">
+                        <ul class="social-links">
+                            <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
+                            <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
+                            <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="top-header__links col-sm-7">
+                        <div class="btn-group languages">
+                            <button type="button" class="btn_languages dropdown-toggle" data-toggle="dropdown"><i class="icon_globe-2"></i>English UK<span class="caret color_primary"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="javascript:void(0);">English UK1</a></li>
+                                <li><a href="javascript:void(0);">English UK2</a></li>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);">Hospital Timings</a> <a href="javascript:void(0);">Book an Appointment</a> </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12">
+                            <a href="index.html" class="logo"> <img class="logo__img" src="img/logo.png" height="50" width="294" alt="Logo"> </a>
+                        </div>
+                        <div class="col-md-8 col-xs-12">
+                            <div class="header-block"> <span class="header-label"> <i class="icon-header icon-call-in color_primary"></i> <span class="helper"> Call Us <a href="tel:+522 234 56789"><strong>0474-2723645</strong></a></span> </span> <span class="header-label"> <i class="icon-header icon-envelope-open color_primary"></i> <span class="helper"> Email us <a href="mailto:hozpitalz@gmail.com"><strong>hozpitalz@gmail.com</strong></a></span> </span>
+                                <!--  <a class="top-cart" href="/"> <i class="icon icon-basket bg-color_primary"></i> Cart Items: 2 <span class="top-cart__price color_second">$250.00</span></a> -->
+                            </div>
+                            <form class="hidden-md hidden-lg text-center" id="search-global-mobile" method="get">
+                                <input type="text" value="" id="search-mobile" name="s">
+                                <button type="submit"><i class="icon fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- end header-inner-->
+            </div>
+            <!-- end container-->
+            <div class="top-nav ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12  col-xs-12">
+                            <div class="navbar yamm ">
+                                <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
+                                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                                    <a href="#" class="navbar-brand">Menu</a> </div>
+                                <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li class="dropdown"><a href="home.html">Home <b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li> <a href="home.html"> Home </a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="about-2.html">ABOUT<b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li> <a href="about-2.html">About us</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="services.html"> SERVICES <b class="caret color_primary"></b> </a>
+                                            <ul role="menu" class="dropdown-menu">
+                                                <li> <a href="services.html">GENERAL SURGERY</a> </li>
+                                                <li> <a href="home.html">COSMETIC SURGERY</a> </li>
+                                                <li> <a href="home.html">DENTISTRY</a> </li>
+                                                <li> <a href="home.html">EYE SURGERY</a> </li>
+                                                <li> <a href="home.html">CARDIAC SURGERY</a> </li>
+                                                <li> <a href="home.html">ORTHOPAEDIC SURGERY</a> </li>
+                                                <li id="heading" style="color:rgba(0, 0, 0, 0)">Select department</li>
+                                                <li id="name" style="color:rgba(0, 0, 0, 0)">Select category</li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="appointment-form.html">APPOINTMENT FORM </a> </li>
+                                        <li><a href="contact.html">CONTACT </a> </li>
+                                    </ul>
+                                    <form id="search-global-menu" class="hidden-xs hidden-sm" method="get">
+                                        <input type="text" value="" id="search" name="s">
+                                        <button type="submit"><i class="icon-magnifier"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end top-nav -->
+        </div>
+        <!-- HEADER END -->
+        <div class="ui-title-page bg_title bg_transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>General Surgery</h1>
+                        <p class="ui-text" style="color:white;margin-left:5px;">General surgery is a specialty dealing with pre-operative, operative and post-operative management of surgical problems of all kinds; especially those related to the abdomen, alimentary canal, soft tissues, endocrine system and, in many cases, the head and the neck. Patients who are critically ill or gravely injured are first brought to this department so that they can be stabilized before the next step of treatment. At our Hospitals, we have a highly experienced team of general surgeons who excel in such critical situations. Our doctors are specially trained to conduct emergency surgeries to contain excessive bleeding, bowel obstructions, organ perforations, burns and abdominal trauma. Other than emergencies, they also routinely carry out operations for complications such as appendicitis, hernia, gallbladder removal, thyroid and removal of tumors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ui-title-page -->
+        <div class="border_btm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="home.html"><i class="icon icon-home color_primary"></i></a></li>
+                            <li class="active">General Surgery</li>
+                            <li style="text-align:center" ng-click="appointment('appointment-form.html')"><a class="btn btn_small" style="background-color: #f26529;margin-top:0px;color:white">Request an appointment</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end breadcrumb -->
+    <main class="main-content">
+        <div class="services">
+            <div class="container">
+                <!--  <div style="text-align:center;margin-bottom:30px"><a class="btn btn_small" href="appointment-form.html" style="background-color: #f26529;margin-top:0px;color:white">Request an appointment</a></div> -->
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="services__item wow bounceInRight" data-wow-delay="1s">
+                            <div class="service__figure">
+                                <div class="hover__figure"> <img src="media/services/1.jpg" height="300" width="370" alt="Foto"></div>
+                                <span class="icon-round icon-round_small helper"><i class="icon flaticon-heart8"></i></span> </div>
+                            <h3 class="ui-title-inner">Gynecology</h3>
+                            <p class="ui-text">It is the medical practice dealing with the health of the female reproductive systems [...]</p>
+                            <a class="btn btn_small" href="services-departments.html">READ MORE</a> </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services__item wow bounceInRight" data-wow-delay="1s">
+                            <div class="service__figure">
+                                <div class="hover__figure"> <img src="media/services/2.jpg" height="300" width="370" alt="Foto"></div>
+                                <span class="icon-round icon-round_small helper"><i class="icon flaticon-heart8"></i></span> </div>
+                            <h3 class="ui-title-inner">Gastro Intestinal</h3>
+                            <p class="ui-text">Digestive system surgery, or gastrointestinal surgery, can be divided into upper GI s [...]
+                            </p>
+                            <a class="btn btn_small" href="GastroIntestinal.html">READ MORE</a> </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services__item wow bounceInRight" data-wow-delay="1s">
+                            <div class="service__figure">
+                                <div class="hover__figure"> <img src="media/services/3.png" height="300" width="370" alt="Foto"></div>
+                                <span class="icon-round icon-round_small helper"><i class="icon flaticon-heart8"></i></span> </div>
+                            <h3 class="ui-title-inner">Cancer</h3>
+                            <p class="ui-text">When the complete removal of a tumor is not possible or might cause excessive damage to [...]</p>
+                            <a class="btn btn_small" href="Cancer.html">READ MORE</a> </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services__item wow bounceInRight" data-wow-delay="1s">
+                            <div class="service__figure">
+                                <div class="hover__figure"> <img src="media/services/4.jpg" height="300" width="370" alt="Foto"></div>
+                                <span class="icon-round icon-round_small helper"><i class="icon flaticon-heart8"></i></span> </div>
+                            <h3 class="ui-title-inner">Urology</h3>
+                            <p class="ui-text">Urology also known as genitourinary surgery, is the branch of medicine that focuses on surgical [...]</p>
+                            <a class="btn btn_small" href="Urology.html">READ MORE</a> </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services__item wow bounceInRight" data-wow-delay="1s">
+                            <div class="service__figure">
+                                <div class="hover__figure"> <img src="media/services/5.jpg" height="300" width="370" alt="Foto"></div>
+                                <span class="icon-round icon-round_small helper"><i class="icon flaticon-heart8"></i></span> </div>
+                            <h3 class="ui-title-inner">Bariatric</h3>
+                            <p class="ui-text">Bariatric surgery includes a variety of procedures performed on people who have obesity.Weight [...]</p>
+                            <a class="btn btn_small" href="Bariatric.html">READ MORE</a> </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="services__item wow bounceInRight" data-wow-delay="1s">
+                            <div class="service__figure">
+                                <div class="hover__figure"> <img src="media/services/6.jpg" height="300" width="370" alt="Foto"></div>
+                                <span class="icon-round icon-round_small helper"><i class="icon flaticon-heart8"></i></span> </div>
+                            <h3 class="ui-title-inner">Other Procedures</h3>
+                            <p class="ui-text">Other procedures that comes under general surgery can be seen in this section.The procedures are[...]</p>
+                            <a class="btn btn_small" href="OtherProcedures.html">READ MORE</a> </div>
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end services -->
+        <div class="container"> <a class="link-full" href="javascript:void(0);">Load More</a> </div>
+    </main>
+    <!-- end main-content -->
+    <footer class="footer">
+        <div class="footer__bottom" style="background-color:#E8E8E8"> <span class="copyright">© Copyrights 2015 Healthcare Agency</span>
+            <ul class="social-links">
+                <li><a target="_blank" href="https://www.facebook.com/"><i class="social_icons social_facebook_square"></i></a></li>
+                <li class=""><a target="_blank" href="https://twitter.com/"><i class="social_icons social_twitter_square"></i></a></li>
+                <li><a target="_blank" href="https://www.google.com/"><i class="social_icons social_googleplus_square"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/"><i class="social_icons social_linkedin_square"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/"><i class="social_icons social_youtube_square"></i></a></li>
+                <li class="li-last"><a target="_blank" href="https://instagram.com/"><i class="social_icons social_instagram_square"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+    <!-- end layout-theme -->
+    <span class="scroll-top bg-color_second"> <i class="fa fa-angle-up"> </i></span>
+    <div id="page-preloader">
+        <div class="spinner-loader"> <img width="294" height="50" alt="Logo" src="img/logo.png" class="logo__loader">
+            <div class="heartbeat-loader"></div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="plugins/isotope/jquery.isotope.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="plugins/bxslider/jquery.bxslider.min.js"></script>
+    <script src="plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="plugins/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="plugins/jelect/jquery.jelect.js"></script>
+    <script src="plugins/nouislider/jquery.nouislider.all.min.js"></script>
+    <!--THEME-->
+    <script src="js/cssua.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
